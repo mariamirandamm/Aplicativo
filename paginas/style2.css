@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+:root{
+
+    --bgcolor:#16161E;
+    --color1: rgb(218, 218, 218);
+    --color2: rgb(172, 172, 172);
+    --color3: #4B54F9;
+    --color4: #d45757;
+    --color5: #191B28;
+    --font: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--bgcolor);
+    font-family: var(--font);
+}
+
+h1{
+    color: var(--color1);
+    font: 700 17px var(--font);
+}
+
+h2{
+    font: 500 15px var(--font);
+    color: var(--color1);
+}
+
+h3{
+    font: 500 13px var(--font);
+    color: var(--color2);
+}
+
+a{
+    text-decoration: none;
+}
+
+.logos{
+    display: block;
+    block-size: 22px;
+}
+
+.imagens{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.menu-cima{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgcolor);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu-cima img{
+    border-radius: 50%;
+    border: 1px solid var(--color2);
+    padding: 7px;
+    margin: 20px;
+}
+
+main{
+    padding: 100px 20px 60px 20px;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    color: var(--color1);
+}
+
+.perfil{
+    display: block;
+    text-align: center;
+}
+
+.status{
+    display: inline-block;
+}
+
+.status p{
+    font: 500 10px var(--font);
+    position: sticky;
+    background-color: green;
+    margin: 0px 0px -30px 80px;
+    padding: 2px 5px;
+    border: 2px solid var(--bgcolor);
+    border-radius: 20px;
+}
+
+.interacoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.interacoes img{
+    border: 1px solid var(--color2);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+img#ligar{
+    background-color:var(--color3);
+    border-color: var(--color3);
+}
+
+.titulo{
+    font: 600 17px var(--font);
+    padding-bottom: 20px;
+}
+
+.historico{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.historico img{
+    display: inline-block;
+}
+
+.historico > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color5);
+    width: 180px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+.tipo-ligacao{
+    font: 600 18px var(--font);
+    padding: 20px;
+}
+
+p#missed{
+    color: var(--color4);
+}
+
+.hora{
+    color: var(--color2);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.quantidade{
+    font-weight: 600;
+}
+
+.historico sub{
+    font: 500 12px var(--font);
+    color: var(--color2);
+}
+
+.bio{
+    background-color: var(--color5);
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: var(--color2);
+}

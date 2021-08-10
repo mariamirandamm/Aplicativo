@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+:root{
+
+    --bgcolor:#16161E;
+    --color1: rgb(218, 218, 218);
+    --color2: rgb(172, 172, 172);
+    --color3: #4B54F9;
+    --color4: #d45757;
+    --font: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--bgcolor);
+    font-family: var(--font);
+}
+
+h1{
+    color: var(--color1);
+}
+
+h2{
+    font: 600 17px var(--font);
+    color: var(--color1);
+}
+
+h2#missed-call{
+    color:var(--color4);
+}
+
+h3{
+    font: 500 14px var(--font);
+    color: var(--color2);
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logos{
+    block-size: 22px;
+}
+
+.imagens{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.menu-cima{
+    background-color: var(--bgcolor);
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+}
+
+.menu-cima a{
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid var(--color2);
+    width: 100px;
+    padding: 15px 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+a#all{
+    background-color:var(--color3);
+    border-color: var(--color3);
+}
+
+main{
+    padding: 100px 20px 60px 20px;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    color: var(--color1);
+}
+
+.recents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    border: 1px solid var(--color2);
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 20px 0px;
+}
+
+.search input{
+    background-color: transparent;
+    border: 0px;
+    font: 20px var(--font);
+    padding: 0px 20px;
+}
+
+/*.historico{
+
+}*/
+
+.ligacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* imagem + informacoes de contato */
+.contato{
+    display: flex;
+    align-items: center;
+}
+
+/* logo telefone + horario da ligacao */
+.horario{
+    text-align: right;
+}
+
+.menu-baixo{
+    background-color:#16161eef;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+    bottom: 0;
+}
+
+a#recent{
+    color: var(--color3);
+    font-weight: 600;
+}
